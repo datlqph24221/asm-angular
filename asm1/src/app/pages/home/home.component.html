@@ -1,0 +1,14 @@
+<div class="container-fluid text-center">
+    <h3>Home Page</h3><br>
+    <div class="row">
+        <div class="col-4" *ngFor="let product of products">
+            <div class="card-body">
+                <img src="{{product.imgUrl}}" class="img-responsive" style="width:100%" alt="Image">
+                <p>{{product.name}}</p>
+                <p>{{product.desc}}</p>
+                <p>Price: {{product.price}}</p>
+                <button class="" routerLink="/product/{{product.id}}">View detail</button>
+            </div>
+        </div>
+    </div>
+</div><br>
